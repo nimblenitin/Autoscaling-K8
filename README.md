@@ -1,5 +1,5 @@
 # Autoscaling-K8
-The Horizontal Pod Autoscaler automatically scales the number of Pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization (or, with custom metrics support.
+The Horizontal Pod Autoscaler automatically scales the number of Pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization or with custom metrics support.
 
 Simple example to demonstrate the application of autoscaling-
 
@@ -19,6 +19,6 @@ $ kubectl run -i --tty load-generator --rm --image busybox --restart Never -- /b
 3. Monitor the autoscaler creating replicas once the load threshold is more than 50%
 $ watch kubectl get hpa
 
-4. Stop the load triggering on Pod from the separate terminal and watch the autoscaling feature. PS: this takes around 5 minutes after the load has dropped below 50%.
+4. Stop the load triggering on Pod from the separate terminal and watch the autoscale- down feature. PS: this takes around 5 minutes after the load has dropped below 50%.
 $ CNTRL+ Z
 
