@@ -22,3 +22,6 @@ $ watch kubectl get hpa
 4. Stop the load triggering on Pod from the separate terminal and watch the autoscale- down feature. PS: this takes around 5 minutes after the load has dropped below 50%.
 $ CNTRL+ Z
 
+
+```
+*As Root*
